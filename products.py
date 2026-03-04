@@ -12,6 +12,10 @@ class Product:
         self.quantity = int(quantity)
         self.active = True
 
+    def __str__(self):
+        return f"{self.name}, price: {self.price}, quantity: {self.quantity}"
+
+
     def get_quantity(self) -> int:
         return self.quantity
 
